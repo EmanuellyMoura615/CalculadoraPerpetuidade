@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class CalculadoraPerpetuidade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+            System.out.print("\nDigite o valor do pagamento anual (em R$): ");
+            double pagamentoAnual = scanner.nextDouble();
+
+            System.out.print("Digite a taxa de desconto (em %): ");
+            double taxaDesconto = scanner.nextDouble();
+
+            // Converter a taxa de desconto para decimal
+            double taxaDecimal = taxaDesconto / 100;
+
+            // Calcular o valor presente da perpetuidade
+            double valorPresente = pagamentoAnual / taxaDecimal;
+
+            System.out.printf("O valor presente da perpetuidade é: R$ %.2f\n", valorPresente);
+
+            }
+        }
